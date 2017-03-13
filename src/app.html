@@ -7,7 +7,7 @@
   </form>
   
   <ul>
-    <li>
+    <li repeat.for="todo of todos">
       <input type="checkbox" checked.bind="todo.done">
       <span>
         ${todo.description}

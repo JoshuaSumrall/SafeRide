@@ -10,7 +10,8 @@ Promise.config({
 export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
-    .feature('resources');
+    .feature('resources')
+    .developmentLogging();
 
   if (environment.debug) {
     aurelia.use.developmentLogging();
@@ -20,5 +21,5 @@ export function configure(aurelia) {
     aurelia.use.plugin('aurelia-testing');
   }
 
-  aurelia.start().then(() => aurelia.setRoot());
+  aurelia.start().then(() => aurelia.setRoot('passenger-list'));
 }

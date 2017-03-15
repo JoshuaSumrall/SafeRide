@@ -4,8 +4,10 @@
     <li repeat.for='passenger of PassengerList'>
       <form>
         <span>${passenger.FirstName} ${passenger.LastName}</span>
-        <input type="checkbox" name="isPickedUp" checked.bind="passenger.IsPickedUp">
-        <input type="checkbox" name="isDroppedOff" checked.bind="passenger.IsDroppedOff">
+        <input type="checkbox" name="isPickedUp" checked.bind="passenger.IsPickedUp" change.trigger="$parent.RecordPickup(passenger)">
+        <input type="checkbox" name="isDroppedOff" checked.bind="passenger.IsDroppedOff" change.trigger="$parent.RecordDropoff(passenger)">
+        <span>${passenger.PickupDate}</span>
+        <span>${passenger.DropoffDate}</span>
       </form>
     </li>
   </ul>

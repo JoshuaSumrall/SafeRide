@@ -5,26 +5,36 @@ import {Passenger} from "./Passenger";
 
 export class PassengerList {
     constructor() {
-        this.PassengerList = [
+        this.passengerList = [
             {
             FirstName: "Jeffrey",
-            LastName: "Coldwen"
+            LastName: "Coldwen",
+            IsPickedUp: false,
+            IsDroppedOff: false
             },
             {
             FirstName: "Howard",
-            LastName: "Balmer"
+            LastName: "Balmer",
+            IsPickedUp: false,
+            IsDroppedOff: false
             },
             {
             FirstName: "Jennifer",
-            LastName: "Hamming"
+            LastName: "Hamming",
+            IsPickedUp: false,
+            IsDroppedOff: false
             },
             {
             FirstName: "Tod",
-            LastName: "Berrignton"
+            LastName: "Berrignton",
+            IsPickedUp: false,
+            IsDroppedOff: false
             },
             {
             FirstName: "Nick",
-            LastName: "Carter"
+            LastName: "Carter",
+            IsPickedUp: false,
+            IsDroppedOff: false
             }
         ];
         // fs.readFile('../test_data/PassengerList.json', 'utf8', function(err, data) {

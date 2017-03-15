@@ -1,7 +1,7 @@
 <template>
-  <hd2>Passenger List</hd2>
+  <h1>Passenger List</h1>
   <ul>
-    <li repeat.for='passenger in PassengerList'>
+    <li repeat.for='passenger of PassengerList'>
       <form>
         <span>${passenger.FirstName} ${passenger.LastName}</span>
         <input type="checkbox" name="isPickedUp" checked.bind="passenger.IsPickedUp">

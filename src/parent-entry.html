@@ -1,0 +1,10 @@
+<template>
+    <h1>Parent Entry Form</h1>
+    <form>
+        <span>First Name</span>
+        <input type="text" name="firstName" value.bind="parent.FirstName"></input><br />
+        <span>Last Name</span>
+        <input type="text" name="lastName" value.bind="parent.LastName"></input><br />
+        <button type="submit" click.trigger="submit()">Submit</button>
+    </form>
+</template>
